@@ -17,6 +17,7 @@
 }
 
 .heading-mobile {
+  color: #062630;
   font-family: "Martian Mono", monospace;
   font-weight: 600;
   font-size: 3.4rem;
@@ -68,6 +69,7 @@
 }
 
 .text {
+  color: #062630;
   font-family: "Inter", sans-serif;
   font-size: 2rem;
   line-height: 140%;

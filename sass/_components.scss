@@ -16,6 +16,7 @@
 }
 
 .heading-mobile {
+	color: $dark-color;
 	font-family: 'Martian Mono', monospace;
 	font-weight: 600;
 	font-size: $font-size-mobile-2;
@@ -71,6 +72,7 @@
 }
 
 .text {
+	color: $dark-color;
 	font-family: $font-family;
 	font-size: 2rem;
 	line-height: $line-height-4;
