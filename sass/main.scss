@@ -1,0 +1,635 @@
+@import './variables';
+@import './colors';
+@import './components';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 2rem;
+	height: 100vh;
+	font-family: $font-family-base;
+	width: 100%;
+}
+
+// header
+
+.header {
+	padding-top: 2.4rem;
+	padding-bottom: 8rem;
+	background-image: url('../img/pattern-light-bg.svg');
+	background-color: $beige;
+	margin-bottom: 6.4rem;
+
+	&__logo-img {
+		max-width: 50%;
+	}
+
+	&__text {
+		margin: 4.8rem 0 6.4rem 0;
+	}
+
+	&__description {
+		margin: 2.4rem 0 3.2rem;
+	}
+
+	&__btn {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	&__img-hero {
+		width: 100%;
+		border-radius: $radius-12;
+
+		&--tablet,
+		&--desktop {
+			display: none;
+		}
+	}
+}
+
+// read
+
+.read {
+	margin-bottom: 6.4rem;
+	&__heading {
+		margin-bottom: 2.4rem;
+	}
+
+	&__list {
+		list-style: none;
+		margin-bottom: 4rem;
+
+		&-item {
+			margin-bottom: 1.6rem;
+			display: flex;
+
+			& img {
+				margin-right: 1.4rem;
+			}
+		}
+	}
+
+	&__img-together {
+		width: 100%;
+		border-radius: $radius-12;
+		&--tablet,
+		&--desktop {
+			display: none;
+		}
+	}
+}
+
+// book-club
+.book-club {
+	margin-bottom: 6.4rem;
+	&__heading {
+		margin-bottom: 2.4rem;
+		&-circle {
+			background-image: url('../img/pattern-circle.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			display: inline-block;
+			padding: 0 1rem;
+		}
+	}
+
+	&__img {
+		margin-top: 4rem;
+	}
+	&__images {
+		width: 100%;
+		border-radius: $radius-12;
+
+		&--tablet,
+		&--desktop {
+			display: none;
+		}
+	}
+}
+
+// reading
+
+.reading {
+	margin-bottom: 6.4rem;
+	&__content {
+		background-color: $beige;
+		background-image: url('../img/pattern-light-bg.svg');
+		padding: 6.4rem 1.6rem;
+	}
+
+	&__heading {
+		margin-bottom: 3.2rem;
+	}
+
+	&__option {
+		margin-bottom: 3.2rem;
+	}
+	&__number {
+		display: inline-block;
+		font-size: 1.6rem;
+		font-weight: 600;
+		border: 2px solid $dark-color;
+		border-radius: $radius-4;
+		padding: 0.6rem 1rem;
+	}
+
+	&__text {
+		font-size: 1.6rem;
+		font-weight: 600;
+		padding-top: 2.4rem;
+		letter-spacing: $letter-spacing-2;
+	}
+
+	&__option-arrow {
+		display: none;
+	}
+}
+
+// offers
+
+.offers {
+	margin: 6.4rem 0;
+
+	&__heading {
+		margin-bottom: 2.4rem;
+	}
+
+	&__option {
+		border: 1px solid $light-white;
+		border-radius: $radius-8;
+		padding: 2.4rem;
+		margin-bottom: 2.4rem;
+
+		&--two {
+			background-color: $light-salomon;
+			background-image: url('../img/pattern-glow.svg');
+			background-position: 24% 12%;
+			background-repeat: no-repeat;
+		}
+
+		&-name,
+		span {
+			font-size: 2.4rem;
+			font-weight: 600;
+			letter-spacing: -1px;
+			line-height: 110%;
+			margin-bottom: 2.4rem;
+		}
+
+		&-price {
+			font-family: 'Inter', sans-serif;
+			font-size: 2rem;
+			font-weight: 400;
+			& span {
+				font-family: 'Martian Mono', monospace;
+				font-size: 3.4rem;
+			}
+		}
+
+		&-item {
+			font-family: 'Inter', sans-serif;
+			display: flex;
+			align-items: center;
+			margin-bottom: 2.4rem;
+
+			& img {
+				margin-right: 1rem;
+			}
+		}
+	}
+	& hr {
+		margin: 2.4rem 0;
+		height: 1px;
+		background-color: $light-white;
+		border: none;
+	}
+
+	&__btn {
+		width: 100%;
+		text-transform: uppercase;
+		font-weight: 600;
+		letter-spacing: -1px;
+		line-height: 130%;
+	}
+}
+
+// reviews
+
+.reviews {
+	margin: 6.4rem 0;
+
+	&__stars {
+		display: flex;
+	}
+
+	&__description {
+		margin: 3.2rem 0;
+		font-size: $font-size-4;
+		line-height: $line-height-1;
+		font-weight: 600;
+		letter-spacing: $letter-spacing-2;
+	}
+}
+
+// footer
+
+.footer {
+	background-color: $dark-color;
+	border-top-left-radius: $radius-12;
+	border-top-right-radius: $radius-12;
+	color: $beige;
+	padding-top: 4.8rem;
+
+	&__heading {
+		text-align: center;
+		margin-bottom: 4rem;
+	}
+
+	&__btn {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2.4rem;
+	}
+
+	.stars {
+		margin-bottom: 6.4rem;
+		&__text {
+			color: $beige;
+		}
+	}
+	hr {
+		border: none;
+		height: 2px;
+		background-color: $light-white;
+		opacity: 0.1;
+	}
+
+	&__bottom {
+		padding: 2.4rem 3.2rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&-date {
+			font-size: 1.4rem;
+			margin-bottom: 1.6rem;
+			font-weight: normal;
+		}
+		&-icon {
+			padding: 1rem;
+		}
+	}
+}
+
+// MEDIA
+
+@media (min-width: 704px) {
+	.header {
+		padding-top: 3.2rem;
+
+		margin-bottom: 8rem;
+
+		&__text {
+			margin: 6.4rem 0 6.4rem 0;
+		}
+
+		&__heading {
+			font-size: $font-size-1;
+		}
+
+		&__btn {
+			font-size: 1.8rem;
+		}
+		&__img-hero {
+			&--tablet {
+				display: block;
+			}
+			&--mobile,
+			&--desktop {
+				display: none;
+			}
+		}
+	}
+
+	.read {
+		margin-bottom: 8rem;
+		&__heading {
+			margin-bottom: 3.4rem;
+			font-size: $font-size-2;
+		}
+
+		&__list {
+			&-item {
+				margin-bottom: 2.4rem;
+				font-size: 2rem;
+			}
+		}
+		&__img-together {
+			&--tablet {
+				display: block;
+			}
+			&--mobile,
+			&--desktop {
+				display: none;
+			}
+		}
+	}
+	.book-club {
+		margin-bottom: 8rem;
+		&__heading {
+			font-size: $font-size-2;
+			&-circle {
+				padding: 0 1.5rem;
+			}
+		}
+		&__images {
+			&--tablet {
+				display: block;
+			}
+			&--mobile,
+			&--desktop {
+				display: none;
+			}
+		}
+	}
+
+	.reading {
+		margin-bottom: 8rem;
+		&__content {
+			padding: 8rem 3.2rem;
+		}
+
+		&__heading {
+			margin-bottom: 4.8rem;
+		}
+
+		&__number {
+			font-size: 1.8rem;
+		}
+
+		&__text {
+			font-size: 1.8rem;
+		}
+	}
+	.offers {
+		margin: 8rem 0;
+
+		&__heading {
+			font-size: $font-size-2;
+			margin-bottom: 4rem;
+		}
+
+		&__box {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 2.4rem;
+		}
+
+		&__option-item {
+			margin-bottom: 3.2rem;
+		}
+	}
+	.reviews {
+		margin: 8rem 0;
+
+		&__description {
+			margin: 3.2rem 0;
+			font-size: $font-size-3;
+			line-height: $line-height-3;
+		}
+	}
+	.footer {
+		padding-top: 6.4rem;
+
+		&__heading {
+			font-size: $font-size-2;
+		}
+
+		&__btn {
+			margin: 0 auto 2.4rem auto;
+			width: 60%;
+		}
+
+		.stars {
+			justify-content: space-evenly;
+			align-items: center;
+
+			&__avatars {
+				width: 60%;
+				text-align: right;
+			}
+			&__contain {
+				flex-basis: 50%;
+			}
+		}
+		&__bottom {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			&-date {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		&__contain {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+			gap: 6.4rem;
+		}
+
+		margin-bottom: 12rem;
+
+		&__text {
+			margin: 6.4rem 0 6.4rem 0;
+		}
+
+		&__img-hero {
+			&--desktop {
+				display: block;
+			}
+
+			&--mobile,
+			&--tablet {
+				display: none;
+			}
+		}
+
+		&__btn {
+			width: 60%;
+		}
+	}
+
+	.read {
+		margin-bottom: 12rem;
+
+		&__content {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 8rem;
+			align-items: center;
+		}
+
+		&__img {
+			order: -1;
+		}
+
+		&__img-together {
+			&--desktop {
+				display: block;
+			}
+
+			&--mobile,
+			&--tablet {
+				display: none;
+			}
+		}
+	}
+
+	.book-club {
+		margin-bottom: 12rem;
+
+		&__content {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 8rem;
+			align-items: center;
+		}
+		&__heading {
+			font-size: $font-size-2;
+			&-circle {
+				padding: 0 1.5rem;
+			}
+		}
+		&__images {
+			&--desktop {
+				display: block;
+			}
+
+			&--mobile,
+			&--tablet {
+				display: none;
+			}
+		}
+	}
+
+	.reading {
+		margin-bottom: 12rem;
+		&__content {
+			padding: 8rem 3.2rem;
+		}
+
+		&__heading {
+			font-size: $font-size-2;
+			margin: 0 auto 6.4rem auto;
+			text-align: center;
+			width: 60%;
+		}
+
+		&__box {
+			display: flex;
+			align-items: stretch;
+
+			gap: 3rem;
+		}
+
+		&__option {
+			flex: 1;
+			position: relative;
+			&-arrow {
+				position: absolute;
+				top: 0;
+				right: 0;
+				display: block;
+			}
+		}
+	}
+	.offers {
+		margin: 12rem 0;
+
+		&__heading {
+			font-size: $font-size-2;
+			margin-bottom: 6.4rem;
+			text-align: center;
+		}
+
+		&__box {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 2.4rem;
+		}
+	}
+	.reviews {
+		margin-top: 12rem ;
+		text-align: center;
+        &__stars{
+            justify-content: center;
+        }
+	}
+	.footer {
+		padding-top: 8rem;
+
+		&__heading {
+            text-align: center;
+            width: 80%;
+           margin: 0 auto 4rem auto;
+			font-size: $font-size-2;
+		}
+
+		&__btn {
+            font-size: 1.8rem;
+			margin: 0 auto 2.4rem auto;
+			width: 50%;
+		}
+
+		.stars {
+			justify-content: center;
+			align-items: center;
+            width: 50%;
+            margin: 0 auto;
+
+			&__avatars {
+				width: 100%;
+				text-align: right;
+			}
+			&__contain {
+				flex-basis: 100%;
+			}
+
+            &__img{
+                text-align: center;
+            }
+		}
+		&__bottom {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+
+			&-date {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
